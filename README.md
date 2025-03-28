@@ -89,8 +89,13 @@ cd ../server && npm install
 4.Configure Environment Variables
 - Create a .env file in server/ with:  
 ```bash
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret_key
+MONGO_URI=mongodb://localhost:27017/blog
+SECRET_ACCESS_KEY=secret
+CLIENT_ORIGIN=https://localhost:5173
+PORT=3000
+FIREBASE_PROJECT_ID=
+FIREBASE_PRIVATE_KEY=
+FIREBASE_CLIENT_EMAIL=
 ```
 
 5.Run the Application  

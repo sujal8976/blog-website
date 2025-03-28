@@ -43,7 +43,7 @@ app.use(express.json());
 
 //DataBase connection
 mongoose
-  .connect(process.env.DB_LOCATION, {
+  .connect(process.env.MONGO_URI, {
     autoIndex: true,
   })
   .then(async () => {
